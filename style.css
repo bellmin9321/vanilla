@@ -8,9 +8,14 @@ a {
   color: inherit;
 }
 
+button {
+  outline: 0;
+  border: 0;
+}
+
 header {
   display: flex;
-  height: 48px;
+  height: 60px;
 }
 
 nav {
@@ -86,5 +91,50 @@ nav {
   box-shadow: 2px 2px lightgray;
 }
 
-@media screen and (max-width: 1023px) {
+/* section */
+.section__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 150px;
+  max-height: 290px;
+  height: calc(100% - 560px);
+}
+
+.google__mark {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+  cursor: pointer;
+}
+
+.google__share {
+  background-color: white;
+  color: rgb(218, 69, 119);
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.64;
+  padding: 2px;
+  position: relative;
+  top: 150px;
+}
+
+.google__share:hover {
+  color: rgb(190, 10, 145);
+}
+
+.section__down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 120px;
+}
+
+.google__input {
+  display: flex;
+  flex-direction: column;
 }
