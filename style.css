@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   display: flex;
   height: 48px;
@@ -10,51 +15,76 @@ header {
 
 nav {
   display: flex;
-  margin: auto;
-  padding: 8px;
-  width: 1500px;
+  padding: 6px;
+  width: 100%;
 }
 
-.blank {
-  padding-right: 30px;
-  width: 1230px;
-  height: 48px;
-}
-
-.nav__container {
+.nav__west {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 30px;
+  width: 80%;
   height: 48px;
-  width: 270px;
-  margin: auto;
+  font-size: 14px;
+  font-family: Apple SD Gothic Neo, arial, sans-serif;
 }
 
-.nav__gmail,
-.nav__img {
-  font: 15px/27px Roboto, RobotoDraft, Arial, sans-serif;
-  text-decoration: none;
-  color: none;
+.nav__info {
+  margin: 0 10px 0 15px;
+  padding: 5px;
 }
 
-.nav__gmail,
+.nav__store {
+  margin: 0 5px 0 5px;
+  padding: 5px;
+}
+
+.nav__east {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 48px;
+  width: 20%;
+  font-size: 14px;
+  font-family: Apple SD Gothic Neo, arial, sans-serif;
+  margin: 0 4px 0 32px;
+}
+
+.nav__info:hover,
+.nav__store:hover,
+.nav__gmail:hover,
 .nav__img:hover {
   text-decoration: underline;
 }
-
-.nav__user {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(95, 114, 110);
-  height: 40px;
-  width: 40px;
-  box-sizing: border-box;
-  display: inline-block;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 15px;
-
+.nav__menu {
+  cursor: pointer;
+}
+.nav__login {
+  background-color: #1a73e8;
   color: white;
-  margin: 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 9px 15px;
+  min-width: 80px;
+  margin-left: 8px;
+  font: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.nav__login:hover {
+  opacity: 0.9;
+  box-shadow: 2px 2px lightgray;
+}
+
+@media screen and (max-width: 1023px) {
 }
