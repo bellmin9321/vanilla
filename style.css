@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: 48px;
+}
+
+nav {
+  display: flex;
+  margin: auto;
+  padding: 8px;
+  width: 1500px;
+}
+
+.blank {
+  padding-right: 30px;
+  width: 1230px;
+  height: 48px;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  width: 270px;
+  margin: auto;
+}
+
+.nav__gmail,
+.nav__img {
+  font: 15px/27px Roboto, RobotoDraft, Arial, sans-serif;
+  text-decoration: none;
+  color: none;
+}
+
+.nav__gmail,
+.nav__img:hover {
+  text-decoration: underline;
+}
+
+.nav__user {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(95, 114, 110);
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+
+  color: white;
+  margin: 0;
+}
