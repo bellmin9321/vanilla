@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -15,7 +21,7 @@ button {
 
 header {
   display: flex;
-  height: 60px;
+  height: 10%;
 }
 
 nav {
@@ -92,13 +98,17 @@ nav {
 }
 
 /* section */
+.section__container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
 .section__up {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  min-height: 150px;
-  max-height: 290px;
-  height: calc(100% - 560px);
+  height: 50%;
 }
 
 .google__mark {
@@ -125,16 +135,158 @@ nav {
   color: rgb(190, 10, 145);
 }
 
-.section__down {
+.section__mid {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
-  height: 120px;
+  padding: 20px;
+  height: 25%;
 }
 
-.google__input {
+.inputclick__container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 584px;
+  height: 100%;
+  position: relative;
+}
+
+.input__container {
+  border: solid 1px lightgray;
+  height: 44px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.input__search {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  width: 33px;
+  height: 44px;
+  padding: 0 13px 0 0;
+}
+.input__text {
+  width: 447px;
+  height: 39px;
+  cursor: text;
+}
+.input__keyboard,
+.input__microphone {
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 44px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.click__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  padding: 18px 0px 0px;
+}
+
+.click__first,
+.click__second {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  color: #3c4043;
+  font-family: Apple SD Gothic Neo, arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  cursor: pointer;
+  padding: 0 16px;
+  user-select: none;
+}
+
+.click__first:hover,
+.click__second:hover {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.click__first {
+  width: 85px;
+}
+
+.click__second {
+  width: 109px;
+}
+
+.section__down {
+  display: flex;
+  height: 25%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+}
+
+.footer__up,
+.footer__down {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: #70757a;
+  font-family: Apple SD Gothic Neo, arial, sans-serif;
+}
+
+.footer__up {
+  padding: 15px 30px;
+}
+.footer__down {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__down__w,
+.footer__down__e {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__ads,
+.footer__business,
+.footer__searchPrinciple,
+.footer__private,
+.footer__promise,
+.footer__setting {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.footer__ads:hover,
+.footer__business:hover,
+.footer__searchPrinciple:hover,
+.footer__private:hover,
+.footer__promise:hover,
+.footer__setting:hover {
+  text-decoration: underline;
 }
