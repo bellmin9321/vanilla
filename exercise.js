@@ -12,17 +12,27 @@
   // }
 
   // 2. Biggest Number
-  var a = 10;
-  var b = 20;
-  var c = 30;
-// a>b>c a>c>b / b>a>c b>c>a / c>a>b c>b>a
-function maxNum() {
-  if( a > b && a > c) { 
-    console.log(a);
-  } else if (b > a && b > c) {
-    console.log(b);
-  } else {
-    console.log(c);
-  }
-}
-console.log(maxNum());
+  // var a = 10;
+  // var b = 20;
+  // var c = 30;
+
+  // if( a > b && a > c) { 
+  //   console.log(a);
+  // } else if (b > a && b > c) {
+  //   console.log(b);
+  // } else {
+  //   console.log(c);
+  // }
+
+  // 3. Word Position
+
+  var word = "dolphin";
+  var sentence = "Where did Jane get the dolphin from, John?";
+  
+var indexOfD = sentence.indexOf(word);
+console.log();
+var indexOfN = sentence.split('').lastIndexOf(word[word.length-1], -3);
+
+console.log(indexOfD, indexOfN);
+
+
