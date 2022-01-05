@@ -38,10 +38,18 @@ let reverseStringIs = rever("bellmin")
 console.log(reverseStringIs);
 
 console.log('2번째 퀴즈');
+
 var longText = "0i1a2m3k4e5n"
 
 for (let i = 0; i < longText.length; i = i+2) {
-
   console.log(longText[i].split("").join());
+  
+}
+// if 사용
+for (let i = 0; i < longText.length; i = i+2) {
+  if (i % 2 === 0) {
+    console.log(longText[i].split("").join());
+    
+  }
   
 }
