@@ -12,17 +12,21 @@
   // }
 
   // 2. Biggest Number
-  // var a = 10;
-  // var b = 20;
-  // var c = 30;
+  var a = 10;
+  var b = 50;
+  var c = 300;
 
-  // if( a > b && a > c) { 
-  //   console.log(a);
-  // } else if (b > a && b > c) {
-  //   console.log(b);
-  // } else {
-  //   console.log(c);
-  // }
+function biggestNum(a, b, c) {
+  if (a > b && a > c) { 
+    return a
+  } else if (b > a && b > c) {
+    return b
+  } else {
+    return c
+  }
+}
+
+console.log(biggestNum(a, b, c));
 
   // 3. Word Position
 
